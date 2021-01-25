@@ -1,0 +1,54 @@
+.rockets {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+
+  gap: 1.5rem;
+}
+
+.rockets > * {
+  padding: 1rem;
+  background: #00800010;
+}
+
+.rockets h2 {
+  color: #008000;
+  margin-bottom: 0.75rem;
+}
+
+.rockets p,
+.note {
+  color: #343434;
+}
+
+.note {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 3rem;
+}
+
+h1 {
+  text-decoration: underline;
+  color: #008000;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .rockets {
+    grid-auto-flow: unset;
+  }
+
+  body {
+    margin: 1.25rem;
+  }
+}
